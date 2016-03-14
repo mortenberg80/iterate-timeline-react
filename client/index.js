@@ -2,9 +2,11 @@
 
 let React = require('react');
 let ReactDOM = require('react-dom');
-let CommentBox = require('./comment.js').CommentBox;
+let EmployeeBox = require('./employeeBox').EmployeeBox;
 
 ReactDOM.render(
-  <CommentBox url='/data/comments.json' pollInterval={2000} />,
+  <div>
+    <EmployeeBox url='/data/employees.json' />
+  </div>,
   document.getElementById('content')
 );
