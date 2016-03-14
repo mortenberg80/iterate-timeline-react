@@ -18,7 +18,6 @@ let prefix = require('gulp-autoprefixer');
 let minifyCSS = require('gulp-minify-css');
 
 // Development Dependencies
-let jshint = require('gulp-jshint');
 let eslint = require('gulp-eslint');
 
 // Test Dependencies
