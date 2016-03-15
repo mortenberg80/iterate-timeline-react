@@ -15,11 +15,11 @@ function createMonthMap(fromDate, toDate) {
   return result;
 }
 
-let MonthRange = React.createClass({
-  getInitialState: function() {
+class MonthRange extends React.Component {
+  getInitialState() {
     return {monthMap: createMonthMap(this.props.fromDate, this.props.toDate)}; 
-  },
-  render: function() {
+  }
+  render() {
     let label = this.props.label !== '' ? <label>{this.props.label} - {this.props.val}</label> : '';
     let update = this.props.update.bind(this, this.state.monthMap);
     return (
@@ -36,7 +36,7 @@ let MonthRange = React.createClass({
       </div>
     )
   }
-});
+};
 
 MonthRange.propTypes = {
   fromDate : React.PropTypes.object,

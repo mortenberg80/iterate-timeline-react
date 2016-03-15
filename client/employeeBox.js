@@ -4,8 +4,8 @@ let React = require('react');
 let employee = require('./employee').employee;
 let moment = require('moment');
 
-let EmployeeImages = React.createClass({
-  render: function() {
+class EmployeeImages extends React.Component {
+  render()  {
     let employeeNodes = this.props.employees.map(function(employee) {
       return (
         <img key={employee.id} src={employee.image} title={employee.name} alt={employee.name} width='100px' />
@@ -17,10 +17,10 @@ let EmployeeImages = React.createClass({
       </div>
     )
   }
-});
+}
 
-let EmployeeStats = React.createClass({
-  render: function() {
+class EmployeeStats extends React.Component {
+  render() {
     let numberOfEmployees = this.props.employees.length;
     let males = this.props.employees.filter(employee => employee.isMale).length;
     let females = this.props.employees.filter(employee => employee.isFemale).length;
@@ -41,10 +41,10 @@ let EmployeeStats = React.createClass({
       </div>
     )
   }
-});
+}
 
-let EmployeeBox = React.createClass({
-  render: function() {
+class EmployeeBox extends React.Component {
+  render() {
     return (
       <div className='container'>
         <EmployeeImages employees={this.props.employees} />
@@ -52,6 +52,6 @@ let EmployeeBox = React.createClass({
       </div>
     );
   }
-});
+}
 
 module.exports.EmployeeBox = EmployeeBox;
