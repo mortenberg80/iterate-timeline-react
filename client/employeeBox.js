@@ -5,12 +5,6 @@ let employee = require('./employee').employee;
 let moment = require('moment');
 
 let EmployeeImages = React.createClass({
-  getInitialState: function() {
-    return {employees: []};
-  },
-  componentDidMount: function() {
-    this.setState({employees: this.props.employees});
-  },
   render: function() {
     let employeeNodes = this.props.employees.map(function(employee) {
       return (
@@ -50,41 +44,11 @@ let EmployeeStats = React.createClass({
 });
 
 let EmployeeBox = React.createClass({
-  getInitialState: function() {
-    return {
-      allEmployees: [],
-      employees: [],
-      month: moment(),
-    };
-  },
-  loadEmployeesFromServer: function() {
-    fetch(this.props.url)
-      .then(response => response.json())
-      .then(json => {
-        let all = json.map(employee);
-        let current = all.filter(employee => employee.isEmployedOn(this.state.month));
-        this.setState({
-          allEmployees: all,
-          employees: current
-        })
-      })
-      .catch(error => console.log(this.props.url, error))
-  },
-  componentWillMount: function() {
-    this.loadEmployeesFromServer();
-  },
   render: function() {
-    if (!this.state.allEmployees) {
-      return (
-        <div className='container'>
-          Laster ansatte...
-        </div>
-      )
-    }
     return (
       <div className='container'>
-        <EmployeeImages employees={this.state.allEmployees} />
-        <EmployeeStats allEmployees={this.state.allEmployees} employees={this.state.employees} month={this.state.month} />
+        <EmployeeImages employees={this.props.employees} />
+        <EmployeeStats allEmployees={this.props.allEmployees} employees={this.props.employees} month={this.props.month} />
       </div>
     );
   }
