@@ -3,5 +3,15 @@
     ecmaVersion: 6
     ecmaFeatures:
       jsx: true
-    rules:
-      semi: 2
+  plugins:
+    - "react"
+  extends:
+    - "eslint:recommended"
+    - "plugin:react/recommended"
+  globals:
+    require: false
+    module: false
+    fetch: false
+    console: false
+    document: false
+    Map: false

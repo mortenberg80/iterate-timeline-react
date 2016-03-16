@@ -59,6 +59,10 @@ class App extends React.Component {
   }
 }
 
+App.propTypes = {
+  url: React.PropTypes.string.isRequired
+}
+
 ReactDOM.render(
   <App url='/data/employees.json' />,
   document.getElementById('content')

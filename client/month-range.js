@@ -16,8 +16,11 @@ function createMonthMap(fromDate, toDate) {
 }
 
 class MonthRange extends React.Component {
-  getInitialState() {
-    return {monthMap: createMonthMap(this.props.fromDate, this.props.toDate)}; 
+  constructor(props) {
+    super(props);
+    this.state = {
+      monthMap: createMonthMap(props.fromDate, props.toDate)
+    }
   }
   render() {
     let label = this.props.label !== '' ? <label>{this.props.label} - {this.props.val}</label> : '';
@@ -30,24 +33,26 @@ class MonthRange extends React.Component {
           min={0}
           max={this.state.monthMap.size}
           step={1}
-          defaultValue={this.state.monthMap.size}
+          defaultValue={this.props.val}
           onChange={update} />
           {label}
       </div>
     )
   }
-};
+}
 
 MonthRange.propTypes = {
   fromDate : React.PropTypes.object,
   toDate: React.PropTypes.object,
   label: React.PropTypes.string,
+  val: React.PropTypes.number,
   update: React.PropTypes.func.isRequired
 }
 
 MonthRange.defaultProps = {
   fromDate: moment().subtract(10, 'years'),
   toDate: moment(),
+  val: 0,
   label: ''
 }
 

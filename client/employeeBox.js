@@ -1,8 +1,6 @@
 'use strict';
 
 let React = require('react');
-let employee = require('./employee').employee;
-let moment = require('moment');
 
 class EmployeeImages extends React.Component {
   render()  {
@@ -17,6 +15,10 @@ class EmployeeImages extends React.Component {
       </div>
     )
   }
+}
+
+EmployeeImages.propTypes = {
+  employees: React.PropTypes.array.isRequired
 }
 
 class EmployeeStats extends React.Component {
@@ -43,6 +45,12 @@ class EmployeeStats extends React.Component {
   }
 }
 
+EmployeeStats.propTypes = {
+  employees: React.PropTypes.array.isRequired,
+  allEmployees: React.PropTypes.array.isRequired,
+  month: React.PropTypes.object.isRequired
+}
+
 class EmployeeBox extends React.Component {
   render() {
     return (
@@ -52,6 +60,12 @@ class EmployeeBox extends React.Component {
       </div>
     );
   }
+}
+
+EmployeeBox.propTypes = {
+  employees: React.PropTypes.array.isRequired,
+  allEmployees: React.PropTypes.array.isRequired,
+  month: React.PropTypes.object.isRequired
 }
 
 module.exports.EmployeeBox = EmployeeBox;
