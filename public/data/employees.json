@@ -3,7 +3,7 @@
         "endDate": "2015-10-05",
         "id": 1,
         "image": "images/jorgensen.jpg",
-        "name": "Simen Fure J\u00f8rgensen",
+        "name": "Simen Fure Jørgensen",
         "sex": "male",
         "startDate": "2007-03-01"
     },
@@ -43,7 +43,7 @@
         "endDate": "2008-02-01",
         "id": 6,
         "image": "images/du.jpg",
-        "name": "Torbj\u00f6rn Josefsson",
+        "name": "Torbjörn Josefsson",
         "sex": "male",
         "startDate": "2007-08-01"
     },
@@ -115,7 +115,7 @@
         "endDate": "2009-06-01",
         "id": 15,
         "image": "images/du.jpg",
-        "name": "J\u00f8rgen Lind",
+        "name": "Jørgen Lind",
         "sex": "male",
         "startDate": "2008-05-01"
     },
@@ -139,7 +139,7 @@
         "endDate": "2009-03-01",
         "id": 18,
         "image": "images/du.jpg",
-        "name": "Andr\u00e9",
+        "name": "André",
         "sex": "male",
         "startDate": "2008-08-01"
     },
@@ -179,7 +179,7 @@
         "endDate": "2013-02-01",
         "id": 23,
         "image": "images/janeirik.jpg",
-        "name": "Jan-Eirik N\u00e6vdal",
+        "name": "Jan-Eirik Nævdal",
         "sex": "male",
         "startDate": "2009-03-01"
     },
@@ -208,7 +208,7 @@
         "startDate": "2009-08-01"
     },
     {
-        "endDate": "",
+        "endDate": "2016-09-30",
         "id": 27,
         "image": "images/ivar.jpg",
         "name": "Ivar Fredriksen",
@@ -219,7 +219,7 @@
         "endDate": "2011-01-01",
         "id": 28,
         "image": "images/du.jpg",
-        "name": "Bj\u00f8rn Tenn\u00f8e",
+        "name": "Bjørn Tennøe",
         "sex": "male",
         "startDate": "2010-09-01"
     },
@@ -288,7 +288,7 @@
         "startDate": "2011-08-01"
     },
     {
-        "endDate": "",
+        "endDate": "2016-06-30",
         "id": 37,
         "image": "images/klette.jpg",
         "name": "Kristian Klette",
@@ -296,10 +296,10 @@
         "startDate": "2011-08-01"
     },
     {
-        "endDate": "",
+        "endDate": "2016-08-31",
         "id": 38,
         "image": "images/palru.jpg",
-        "name": "P\u00e5l Ruud",
+        "name": "Pål Ruud",
         "sex": "male",
         "startDate": "2011-08-01"
     },
@@ -408,7 +408,7 @@
         "startDate": "2013-07-01"
     },
     {
-        "endDate": "",
+        "endDate": "2016-05-31",
         "id": 52,
         "image": "images/iselin.jpg",
         "name": "Iselin Kornli",
@@ -432,7 +432,7 @@
         "startDate": "2013-08-01"
     },
     {
-        "endDate": "",
+        "endDate": "2016-08-31",
         "id": 55,
         "image": "images/fredrikv.jpg",
         "name": "Fredrik Vraalsen",
@@ -443,7 +443,7 @@
         "endDate": "",
         "id": 56,
         "image": "images/oddmund.jpg",
-        "name": "Oddmund Str\u00f8mme",
+        "name": "Oddmund Strømme",
         "sex": "male",
         "startDate": "2013-10-01"
     },
@@ -459,7 +459,7 @@
         "endDate": "",
         "id": 58,
         "image": "images/Henrik.jpg",
-        "name": "Henrik Glas\u00f8 Skifjeld",
+        "name": "Henrik Glasø Skifjeld",
         "sex": "male",
         "startDate": "2014-08-01"
     },
@@ -467,7 +467,7 @@
         "endDate": "",
         "id": 59,
         "image": "images/jorgen.jpg",
-        "name": "J\u00f8rgen Aaberg",
+        "name": "Jørgen Aaberg",
         "sex": "male",
         "startDate": "2014-08-01"
     },
@@ -475,7 +475,7 @@
         "endDate": "",
         "id": 60,
         "image": "images/magnusDaehlen.jpg",
-        "name": "Magn\u00fas D\u00e6hlen",
+        "name": "Magnús Dæhlen",
         "sex": "male",
         "startDate": "2014-08-01"
     },
@@ -496,7 +496,7 @@
         "startDate": "2014-09-01"
     },
     {
-        "endDate": "",
+        "endDate": "2016-09-30",
         "id": 63,
         "image": "images/erik.jpg",
         "name": "Erik Assum",
@@ -512,7 +512,7 @@
         "startDate": "2015-01-01"
     },
     {
-        "endDate": "",
+        "endDate": "2016-06-30",
         "id": 65,
         "image": "images/therese.jpg",
         "name": "Therese Engen",
@@ -523,7 +523,7 @@
         "endDate": "",
         "id": 66,
         "image": "images/arne.jpg",
-        "name": "Arne M\u00e6hlum",
+        "name": "Arne Mæhlum",
         "sex": "male",
         "startDate": "2015-08-01"
     },
@@ -554,7 +554,7 @@
     {
         "endDate": "",
         "id": 70,
-        "image": "images/du.jpg",
+        "image": "images/torerik.jpg",
         "name": "Tor-Erik Steinsland",
         "sex": "male",
         "startDate": "2016-02-01"
@@ -563,8 +563,88 @@
         "endDate": "2015-04-05",
         "id": 71,
         "image": "images/du.jpg",
-        "name": "Markus Ves\u00f8en",
+        "name": "Markus Vesøen",
         "sex": "male",
         "startDate": "2015-01-05"
+    },
+    {
+        "endDate": "",
+        "id": 72,
+        "image": "images/pia.jpg",
+        "name": "Pia Lindkjølen",
+        "sex": "female",
+        "startDate": "2016-06-01"
+    },
+    {
+        "endDate": "",
+        "id": 73,
+        "image": "images/kjetil.jpg",
+        "name": "Kjetil Sletten",
+        "sex": "male",
+        "startDate": "2016-08-01"
+    },
+    {
+        "endDate": "",
+        "id": 74,
+        "image": "images/pernille.jpg",
+        "name": "Pernille Wangsholm",
+        "sex": "female",
+        "startDate": "2016-08-01"
+    },
+    {
+        "endDate": "",
+        "id": 75,
+        "image": "images/nils.jpg",
+        "name": "Nils Rugsveen",
+        "sex": "male",
+        "startDate": "2016-08-01"
+    },
+    {
+        "endDate": "",
+        "id": 76,
+        "image": "images/jonas.jpg",
+        "name": "Jonas Feiring",
+        "sex": "male",
+        "startDate": "2016-01-01"
+    },
+    {
+        "endDate": "",
+        "id": 77,
+        "image": "images/patrick.jpg",
+        "name": "Patrick Skevik",
+        "sex": "male",
+        "startDate": "2016-02-01"
+    },
+    {
+        "endDate": "",
+        "id": 78,
+        "image": "images/du.jpg",
+        "name": "Martine Bongard",
+        "sex": "female",
+        "startDate": "2016-08-01"
+    },
+    {
+        "endDate": "",
+        "id": 79,
+        "image": "images/bendik.jpg",
+        "name": "Bendik Skotland Hansen",
+        "sex": "male",
+        "startDate": "2016-08-01"
+    },
+    {
+        "endDate": "",
+        "id": 80,
+        "image": "images/andreas.jpg",
+        "name": "Andreas Nordahl",
+        "sex": "male",
+        "startDate": "2016-08-01"
+    },
+    {
+        "endDate": "",
+        "id": 81,
+        "image": "images/alexander.jpg",
+        "name": "Alexander Bull",
+        "sex": "male",
+        "startDate": "2016-08-01"
     }
 ]
