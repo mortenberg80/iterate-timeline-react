@@ -23,11 +23,12 @@ class MonthRange extends React.Component {
     }
   }
   render() {
-    let label = this.props.label !== '' ? <label>{this.props.label} - {this.props.val}</label> : '';
+    let month = this.state.monthMap.get(this.props.val).format('MMMM YYYY').toString();
+    let label = this.props.label !== '' ? <label>{this.props.label} - {month}</label> : '';
     let update = this.props.update.bind(this, this.state.monthMap);
     return (
       <div>
-        <input 
+        <input
           ref='inp'
           type='range'
           min={0}

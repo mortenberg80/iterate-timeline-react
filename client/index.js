@@ -13,7 +13,8 @@ class App extends React.Component {
     this.state = {
       allEmployees: [],
       employees: [],
-      month: moment()
+      month: moment(),
+      selectedMonth: 1
     }
     this.update = this.update.bind(this)
   }
@@ -34,11 +35,13 @@ class App extends React.Component {
     this.loadEmployeesFromServer();
   }
   update(monthMap) {
-    let month = monthMap.get(+ReactDOM.findDOMNode(this.refs.month.refs.inp).value);
+    let selectedMonth = +ReactDOM.findDOMNode(this.refs.month.refs.inp).value;
+    let month = monthMap.get(selectedMonth);
     let current = this.state.allEmployees.filter(employee => employee.isEmployedOn(month));
     this.setState({
       month: month,
-      employees: current
+      employees: current,
+      selectedMonth: selectedMonth
     });
   }
   render() {
@@ -52,7 +55,7 @@ class App extends React.Component {
     }
     return (
       <div>
-        <MonthRange ref='month' update={this.update} label='Måned' />
+        <MonthRange ref='month' update={this.update} label='Måned' val={this.state.selectedMonth} />
         <EmployeeBox allEmployees={this.state.allEmployees} employees={this.state.employees} month={this.state.month} />
       </div>
     )
